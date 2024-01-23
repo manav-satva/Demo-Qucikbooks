@@ -1,0 +1,24 @@
+﻿@using ModelDataLibrary.Models
+@model UserToken;
+@{
+    ViewData["Title"] = "Home Page";
+    var url = ViewBag.QbUrl;
+    var RealMId = ViewBag.RealMId;
+    var IsConnected = ViewBag.IsConnected;
+}
+
+<div class="text-center">
+    <h1 class="display-4">Welcome</h1>
+    <p>Learn about <a href="https://learn.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
+
+    @if (IsConnected)
+    {
+        <a class="btn btn-outline-dark" href="@Url.Action("RevokeToken", new { realMId = RealMId })">Revoke Token</a>
+        <a class="btn btn-outline-dark" href="@Url.Action("GetCustomersList", new { realMId = RealMId })">View Customers</a>
+
+    }
+    else
+    {
+        <a class="btn btn-outline-dark" href="@url">Click here to connect</a>
+    }
+</div>

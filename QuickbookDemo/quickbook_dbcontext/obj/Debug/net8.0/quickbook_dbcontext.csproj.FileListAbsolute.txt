@@ -1,0 +1,17 @@
+D:\Manav\New folder\QuickbookDemo\quickbook_dbcontext\bin\Debug\net8.0\quickbook_dbcontext.deps.json
+D:\Manav\New folder\QuickbookDemo\quickbook_dbcontext\bin\Debug\net8.0\quickbook_dbcontext.runtimeconfig.json
+D:\Manav\New folder\QuickbookDemo\quickbook_dbcontext\bin\Debug\net8.0\quickbook_dbcontext.dll
+D:\Manav\New folder\QuickbookDemo\quickbook_dbcontext\bin\Debug\net8.0\quickbook_dbcontext.pdb
+D:\Manav\New folder\QuickbookDemo\quickbook_dbcontext\bin\Debug\net8.0\Quickbook_Data.dll
+D:\Manav\New folder\QuickbookDemo\quickbook_dbcontext\bin\Debug\net8.0\Quickbook_Data.pdb
+D:\Manav\New folder\QuickbookDemo\quickbook_dbcontext\obj\Debug\net8.0\quickbook_dbcontext.csproj.AssemblyReference.cache
+D:\Manav\New folder\QuickbookDemo\quickbook_dbcontext\obj\Debug\net8.0\quickbook_dbcontext.GeneratedMSBuildEditorConfig.editorconfig
+D:\Manav\New folder\QuickbookDemo\quickbook_dbcontext\obj\Debug\net8.0\quickbook_dbcontext.AssemblyInfoInputs.cache
+D:\Manav\New folder\QuickbookDemo\quickbook_dbcontext\obj\Debug\net8.0\quickbook_dbcontext.AssemblyInfo.cs
+D:\Manav\New folder\QuickbookDemo\quickbook_dbcontext\obj\Debug\net8.0\quickbook_dbcontext.csproj.CoreCompileInputs.cache
+D:\Manav\New folder\QuickbookDemo\quickbook_dbcontext\obj\Debug\net8.0\quickbook_dbcontext.csproj.CopyComplete
+D:\Manav\New folder\QuickbookDemo\quickbook_dbcontext\obj\Debug\net8.0\quickbook_dbcontext.dll
+D:\Manav\New folder\QuickbookDemo\quickbook_dbcontext\obj\Debug\net8.0\refint\quickbook_dbcontext.dll
+D:\Manav\New folder\QuickbookDemo\quickbook_dbcontext\obj\Debug\net8.0\quickbook_dbcontext.pdb
+D:\Manav\New folder\QuickbookDemo\quickbook_dbcontext\obj\Debug\net8.0\quickbook_dbcontext.genruntimeconfig.cache
+D:\Manav\New folder\QuickbookDemo\quickbook_dbcontext\obj\Debug\net8.0\ref\quickbook_dbcontext.dll

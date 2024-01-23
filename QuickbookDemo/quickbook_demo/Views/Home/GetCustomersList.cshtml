@@ -1,0 +1,80 @@
+﻿@using Intuit.Ipp.Data
+@model IEnumerable<Customer>
+
+@{
+    ViewData["Title"] = "GetCustomersList";
+
+    var realmId = ViewBag.RealmId;
+}
+
+<h1>Customers</h1>
+
+<p>
+    <a href="@Url.Action("AddEditCustomerData", new { realMId = realmId })">Create New</a>
+</p>
+
+
+<table class="table table-dark table-hover">
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.Id)
+            </th>
+            <th>
+                @Html.DisplayName("Name")
+            </th>
+            <th>
+                @Html.DisplayName("Company")
+            </th>
+            <th>
+                @Html.DisplayName("Phone")
+            </th>
+            <th>
+                @Html.DisplayName("Email")
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.WebAddr.URI)
+            </th>
+
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+        @if (Model != null && Model.Any())
+        {
+            @foreach (var item in Model)
+            {
+                <tr>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.Id)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.DisplayName)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.CompanyName)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.PrimaryPhone.FreeFormNumber)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.PrimaryEmailAddr.Address)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.WebAddr.URI)
+                    </td>
+                    <td>
+                        <a class="btn-light btn" href="@Url.Action("AddEditCustomerData", new { realMId = realmId , Id = item.Id })">Edit</a>
+                    </td>
+                </tr>
+            }
+        }
+        else
+        {
+            <tr>
+                <td> No data found! </td>
+            </tr>
+        }
+    </tbody>
+</table>
+

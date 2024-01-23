@@ -1,0 +1,59 @@
+﻿@{
+    ViewData["Title"] = "ErrorView";
+}
+
+<style>
+
+    .cover-background {
+        position: relative !important;
+        background-size: cover !important;
+        overflow: hidden !important;
+        background-position: center !important;
+        background-repeat: no-repeat !important;
+    }
+
+    .p-0 {
+        padding: 0 !important;
+    }
+
+    section {
+        margin-top: 10%;
+        padding: 120px 0;
+        overflow: hidden;
+        background: #fff;
+    }
+    .text-center {
+        text-align: center !important;
+    }
+
+    .error-page h1 {
+        font-size: 200px;
+        line-height: 1;
+        font-weight: 600;
+    }
+
+    .text-secondary {
+        color: #15395A !important;
+    }
+
+    .mb-4 {
+        margin-bottom: 1.5rem !important;
+    }
+</style>
+
+<section class="p-0 bg-img cover-background" style="background:grey;">
+    <div class="container-fluid d-flex flex-column">
+        <div class="row align-items-center justify-content-center">
+            <div class="col-md-9 col-lg-6 my-5">
+                <div class="text-center ">
+                    <h1 class="mb-0 text-secondary">404</h1>
+                    <h2 class="mb-4 text-white">Sorry, something went wrong!</h2>
+                    <p class="w-sm-80 mx-auto mb-4 text-white">This page is incidentally inaccessible because of support. We will back very before long much obliged for your understanding</p>
+                    <div>
+                        <a class="btn btn-light" href="@Url.Action("Index")">Return Home</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>

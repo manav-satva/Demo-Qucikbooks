@@ -1,0 +1,65 @@
+﻿@model ModelDataLibrary.ViewModels.CustomerViewModel
+
+@{
+    ViewData["Title"] = "AddEditCustomerData";
+    string realMId = ViewBag.RealMId;
+}
+<div class="row">
+    <div class="col-md-4">
+        <form asp-action="AddEditCustomerData">
+            <div asp-validation-summary="None" class="text-danger"></div>
+            <div class="form-group">
+                <input asp-for="Id" class="form-control" type="hidden" />
+                <input asp-for="SyncToken" class="form-control" type="hidden" />
+                <input asp-for="RealMId" value="@realMId" class="form-control" type="hidden" />
+            </div>
+            <div class="form-group">
+                <label asp-for="Name" class="control-label"></label>
+                <input asp-for="Name" class="form-control" />
+                <span asp-validation-for="Name" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="CompanyName" class="control-label"></label>
+                <input asp-for="CompanyName" class="form-control" />
+                <span asp-validation-for="CompanyName" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Email" class="control-label"></label>
+                <input asp-for="Email" class="form-control"/>
+                <span asp-validation-for="Email" class="text-danger"></span>
+
+            </div>
+            <div class="form-group">
+                <label asp-for="Phone" class="control-label"></label>
+                <input asp-for="Phone" class="form-control"/>
+                <span asp-validation-for="Phone" class="text-danger"></span>
+
+            </div>
+            <div class="form-group">
+                <label asp-for="Website" class="control-label"></label>
+                <input asp-for="Website" class="form-control"/>
+                <span asp-validation-for="Website" class="text-danger"></span>
+            </div>
+            <div class="form-group mt-4">
+                <input type="submit" value="@(!string.IsNullOrEmpty(Model.Id)?"Update":"Create")" class="btn btn-primary" />
+            </div>
+        </form>
+    </div>
+</div>
+@*
+<div>
+    <a asp-action="Index">Back to List</a>
+</div> *@
+
+@section Scripts {
+    @{
+        await Html.RenderPartialAsync("_ValidationScriptsPartial");
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.inputmask/5.0.7/jquery.inputmask.min.js"></script>
+        <script type="text/javascript">
+            $(document).ready(function () {
+                $("#Phone").inputmask("(999) 999-9999");
+            });
+        </script>
+    }
+}
