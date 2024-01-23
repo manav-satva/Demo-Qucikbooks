@@ -1,0 +1,2 @@
+--> Before starting project changes companyid in appsetting.json and update credentials for quickbooks
+--> update connection string for database connection and follow with command ( update-database ) in package manager console
